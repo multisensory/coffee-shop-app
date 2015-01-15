@@ -1,0 +1,19 @@
+<ion-view view-title="Pay">
+    <ion-content>
+        <div class="list list-inset">
+            <div ng-repeat="item in items" class="item">
+                {{item.name}}
+                <span class="item-note">${{item.price}}</span>
+            </div>
+            <div class="item total" href="#">
+                Total
+                <span class="item-note">$8.25</span>
+            </div>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="openModal()">
+                Pay
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

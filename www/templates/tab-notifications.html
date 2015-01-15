@@ -1,0 +1,14 @@
+<ion-view view-title="Notifications">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar" ng-repeat="notification in notifications" type="item-text-wrap">
+                <img ng-src="{{notification.face}}">
+                <h2>{{notification.name}}</h2>
+                <p>{{notification.lastText}}</p>
+                <ion-option-button class="button-assertive" ng-click="remove(notification)">
+                    Delete
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
